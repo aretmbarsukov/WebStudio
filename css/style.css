@@ -242,3 +242,9 @@
     line-height: 1.87;
     letter-spacing: 0.48px;
 }
+
+.team-img {
+    width: 270px;
+    height: 260px;
+    flex-shrink: 0;
+}
