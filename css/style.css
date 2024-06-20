@@ -9,6 +9,15 @@
     --footer-number: rgba(255, 255, 255, 8.60);
 }
 
+.header-logo {
+    color: var(--logo-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+
 .style1 {
     color: var(--accent-color);
     font-family: Raleway;
@@ -18,17 +27,8 @@
     letter-spacing: 0.78px;
 }
 
-.style2 {
-    color: var(--logo-color);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.38;
-    letter-spacing: 0.78px;
-}
-
 .head-pages {
-    color: var(--logo-color);
+    color: var(--added-text);
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
@@ -45,7 +45,7 @@
     letter-spacing: 0.28px;
 }
 
-.head-addres {
+.head-link {
     color: var(--added-text);
     font-family: Roboto;
     font-size: 14px;
@@ -54,7 +54,7 @@
     letter-spacing: 0.28px;
 }
 
-.head-addres:hover {
+.head-link:hover {
     color: var(--accent-color);
     font-family: Roboto;
     font-size: 14px;
@@ -78,7 +78,7 @@
     text-transform: uppercase;
 }
 
-.hero-button-child {
+.hero-button {
     color: var(--main-background);
     text-align: center;
     font-family: Roboto;
@@ -114,19 +114,6 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
-}
-
-.footer {
-    background-color: var(--footer-background);
-}
-
-.style3 {
-    color: var(--main-background);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.38;
-    letter-spacing: 0.78px;
 }
 
 .work-title {
@@ -167,7 +154,20 @@
     letter-spacing: 0.48px;
 }
 
-.footer-link {
+.footer {
+    background-color: var(--footer-background);
+}
+
+.footer-logo {
+    color: var(--main-background);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+
+.address-link {
     color: var(--main-background);
     font-family: Roboto;
     font-size: 14px;
@@ -176,16 +176,7 @@
     letter-spacing: 0.42px;
 }
 
-.footer-mail {
-    color: var(--footer-number);
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-}
-
-.footer-phonenamber {
+.footer-link {
     color: var(--footer-number);
     font-family: Roboto;
     font-size: 14px;
@@ -223,6 +214,26 @@
     border-radius: 4px;
     background: var(--accent-color);
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.offers-span {
+    color: var(--title-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height:1.62;
+    letter-spacing: 0.48px;
+}
+
+.offers-span:hover {
+    color: var(--main-background);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
 }
 
 .offers-title {
