@@ -9,8 +9,19 @@
     --footer-number: rgba(255, 255, 255, 8.60);
 }
 
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .body {
     font-family: Roboto;
+}
+
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-logo {
@@ -79,6 +90,8 @@
 
 .hero {
     background-color: var(--footer-background);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -130,6 +143,10 @@
     letter-spacing: 0.42px;
 }
 
+.work{
+    padding-top: 94px;
+}
+
 .work-title {
     color: var(--title-color);
     text-align: center;
@@ -138,6 +155,11 @@
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
+}
+
+.team{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-headlines {
@@ -170,6 +192,8 @@
 
 .footer {
     background-color: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -197,6 +221,11 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+}
+
+.offers{
+    padding-top: 94px;
+    padding-bottom: 114px;
 }
 
 .offers-list {
