@@ -47,7 +47,7 @@
 }
 
 .head-pages {
-    color: var(--added-text);
+    color: var(--title-color);
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
