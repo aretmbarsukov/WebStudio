@@ -124,6 +124,10 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.information{
+    padding-top: 94px;
+}
+
 .information-title {
     color: var(--title-color);
     font-family: Roboto;
