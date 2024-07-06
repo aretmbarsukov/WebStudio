@@ -24,6 +24,10 @@
     padding-bottom: 25px;
 }
 
+.header-div{
+    display: flex;
+}
+
 .header-logo {
     color: var(--logo-color);
     font-family: Raleway;
@@ -44,6 +48,9 @@
 
 .nav-list {
     list-style: none;
+    display: flex;
+    gap: 50px;
+    padding-left: 93px;
 }
 
 .head-pages {
@@ -67,6 +74,9 @@
 
 .header-list {
     list-style: none;
+    display: flex;
+    gap: 50px;
+    padding-left: 344px;
 }
 
 .head-link {
@@ -103,6 +113,9 @@
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    width: 696px;
+    margin-left: 236px;
+    margin-right: 236px;
 }
 
 .hero-button {
@@ -116,6 +129,8 @@
 }
 
 .hero-button {
+    margin-left: 476px;
+    margin-right: 476px;
     width: 216px;
     height: 50px;
     flex-shrink: 0;
@@ -126,6 +141,16 @@
 
 .information{
     padding-top: 94px;
+}
+
+.information-list{
+    flex-shrink: 0;
+    display: flex;
+}
+
+.information-item{
+    width: 270px;
+    flex-shrink: 0;
 }
 
 .information-title {
@@ -161,6 +186,11 @@
     letter-spacing: 1.08px;
 }
 
+.work-list{
+    display: flex;
+    gap: 30px;
+}
+
 .team{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -176,6 +206,11 @@
     letter-spacing: 1.08px;
 }
 
+.team-list{
+    display: flex;
+    gap: 30px;
+}
+
 .team-title {
     color: var(--title-color);
     font-family: Roboto;
@@ -183,6 +218,8 @@
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .team-text {
@@ -192,6 +229,8 @@
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.48px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .footer {
@@ -227,9 +266,20 @@
     letter-spacing: 0.42px;
 }
 
+/* .footer-list{
+    #
+} */
+
 .offers{
     padding-top: 94px;
     padding-bottom: 114px;
+}
+
+.offers-buttons{
+    display: flex;
+    gap: 8px;
+    padding-left: 400px;
+    flex-shrink: 0;
 }
 
 .offers-list {
@@ -240,6 +290,9 @@
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.48px;
+    /* display: flex; */
+    gap: 30px;
+    margin-top: 50px;
 }
 
 .offers-button {
@@ -283,6 +336,24 @@
     letter-spacing: 0.48px;
 }
 
+.offers-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offers-item{
+    width: 370px;
+    height: 404px;
+    flex-shrink: 0;
+    
+}
+
+.offers-img{
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;
+}
+
 .offers-title {
     color: var(--title-color);
     font-family: Roboto;
@@ -296,7 +367,7 @@
     color: var(--added-text);
     font-family: Roboto;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 512;
     line-height: 1.87;
     letter-spacing: 0.48px;
 }
