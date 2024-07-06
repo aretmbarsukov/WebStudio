@@ -137,6 +137,7 @@
     border-radius: 4px;
     background: rgba(33, 150, 243, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
 }
 
 .information{
@@ -184,6 +185,7 @@
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
 }
 
 .work-list{
@@ -192,7 +194,7 @@
 }
 
 .team{
-    padding-top: 94px;
+    padding-top: 188px;
     padding-bottom: 94px;
 }
 
@@ -204,6 +206,8 @@
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
+    margin-bottom: 153px;
+    /* margin-top: 188px; */
 }
 
 .team-list{
@@ -265,10 +269,6 @@
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
-
-/* .footer-list{
-    #
-} */
 
 .offers{
     padding-top: 94px;
