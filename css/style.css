@@ -6,7 +6,7 @@
     --main-background: #FFF;
     --team-background: #F5F4FA;
     --footer-background: #2F303A;
-    --footer-number: rgba(255, 255, 255, 8.60);
+    --footer-number: rgba(255, 255, 255, 0.60);
 }
 
 .container{
@@ -151,6 +151,7 @@
 .information-list{
     flex-shrink: 0;
     display: flex;
+    gap: 30px;
 }
 
 .information-item{
@@ -270,7 +271,7 @@
 }
 
 .address-link{
-    color: var(--footer-number);
+    color: var(--main-background);
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
