@@ -26,6 +26,7 @@
 
 .header-div{
     display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -50,7 +51,7 @@
     list-style: none;
     display: flex;
     gap: 50px;
-    padding-left: 93px;
+    margin-left: 93px;
 }
 
 .head-pages {
@@ -76,7 +77,7 @@
     list-style: none;
     display: flex;
     gap: 50px;
-    padding-left: 344px;
+    margin-left: 344px;
 }
 
 .head-link {
@@ -119,6 +120,9 @@
 }
 
 .hero-button {
+    width: 216px;
+    height: 50px;
+    flex-shrink: 0;
     color: var(--main-background);
     text-align: center;
     font-family: Roboto;
@@ -175,6 +179,7 @@
 
 .work{
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .work-title {
@@ -194,7 +199,8 @@
 }
 
 .team{
-    padding-top: 188px;
+    background-color: #F5F4FA;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -206,8 +212,12 @@
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
-    margin-bottom: 153px;
-    /* margin-top: 188px; */
+    margin-bottom: 50px;
+}
+
+.team-item{
+    border-radius: 0px 0px 4px 4px;
+    background: var(--main-background);
 }
 
 .team-list{
@@ -223,7 +233,7 @@
     line-height: 1.18;
     letter-spacing: 0.48px;
     text-align: center;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .team-text {
@@ -234,7 +244,8 @@
     line-height: 1.18;
     letter-spacing: 0.48px;
     text-align: center;
-    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .footer {
@@ -250,15 +261,26 @@
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
+    /* margin-bottom: 20px; */
 }
 
-.address-link {
-    color: var(--main-background);
+.footer-address{
+    margin-top: 20px;
+    gap: 9px;
+}
+
+.address-link{
+    color: var(--footer-number);
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+    /* margin-top: 20px; */
+}
+
+.footer-list{
+    margin-top: 9px;
 }
 
 .footer-link {
