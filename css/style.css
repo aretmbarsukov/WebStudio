@@ -31,7 +31,6 @@
 
 .header-logo {
     color: var(--logo-color);
-    font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.38;
@@ -56,7 +55,6 @@
 
 .head-pages {
     color: var(--title-color);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -66,7 +64,6 @@
 
 .head-pages:hover {
     color: var(--accent-color);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -82,7 +79,6 @@
 
 .head-link {
     color: var(--added-text);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -92,7 +88,6 @@
 
 .head-link:hover {
     color: var(--accent-color);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -103,12 +98,12 @@
     background-color: var(--footer-background);
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
 }
 
 .hero-title {
     color: var(--main-background);
     text-align: center;
-    font-family: Roboto;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -119,13 +114,9 @@
     margin-right: 236px;
 }
 
-.hero-button {
-    width: 216px;
-    height: 50px;
-    flex-shrink: 0;
+.hero-span {
     color: var(--main-background);
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
@@ -133,15 +124,11 @@
 }
 
 .hero-button {
-    margin-left: 476px;
-    margin-right: 476px;
-    width: 216px;
-    height: 50px;
-    flex-shrink: 0;
     border-radius: 4px;
     background: rgba(33, 150, 243, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-top: 30px;
+    padding: 10px 32px;
 }
 
 .information{
@@ -161,7 +148,6 @@
 
 .information-title {
     color: var(--title-color);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -171,11 +157,11 @@
 
 .information-text {
     color: var(--added-text);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+    margin-top: 10px;
 }
 
 .work{
@@ -186,7 +172,6 @@
 .work-title {
     color: var(--title-color);
     text-align: center;
-    font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16;
@@ -208,7 +193,6 @@
 .team-headlines {
     color: var(--title-color);
     text-align: center;
-    font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16;
@@ -226,27 +210,28 @@
     gap: 30px;
 }
 
+.team-div {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .team-title {
     color: var(--title-color);
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
     text-align: center;
-    margin-top: 30px;
 }
 
 .team-text {
     color: var(--added-text);
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.48px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 30px;
 }
 
 .footer {
@@ -262,35 +247,38 @@
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-    /* margin-bottom: 20px; */
 }
 
 .footer-address{
     margin-top: 20px;
+    /* display: grid;
+    row-gap: 9px; */
+}
+
+.address-div{
+    display: grid;
     gap: 9px;
 }
 
 .address-link{
     color: var(--main-background);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
-    /* margin-top: 20px; */
-}
-
-.footer-list{
-    margin-top: 9px;
 }
 
 .footer-link {
     color: var(--footer-number);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+}
+
+.footer-list{
+    display: grid;
+    gap: 9px;
 }
 
 .offers{
@@ -308,7 +296,6 @@
 .offers-list {
     color: var(--title-color);
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
@@ -326,7 +313,6 @@
 .offers-list:hover {
     color: var(--main-background);
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
@@ -342,7 +328,6 @@
 .offers-span {
     color: var(--title-color);
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height:1.62;
@@ -352,7 +337,6 @@
 .offers-span:hover {
     color: var(--main-background);
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
@@ -379,7 +363,6 @@
 
 .offers-title {
     color: var(--title-color);
-    font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
@@ -388,7 +371,6 @@
 
 .offers-text {
     color: var(--added-text);
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 512;
     line-height: 1.87;
