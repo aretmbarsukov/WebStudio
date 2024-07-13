@@ -46,11 +46,14 @@
     letter-spacing: 0.78px;
 }
 
-.nav-list {
+.header-nav {
+    margin-left: 93px;
+}
+
+.nav-list{
     list-style: none;
     display: flex;
     gap: 50px;
-    margin-left: 93px;
 }
 
 .head-pages {
@@ -74,7 +77,7 @@
     list-style: none;
     display: flex;
     gap: 50px;
-    margin-left: 344px;
+    margin-left: auto;
 }
 
 .head-link {
@@ -211,8 +214,8 @@
 }
 
 .team-div {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-title {
@@ -380,5 +383,4 @@
 .team-img {
     width: 270px;
     height: 260px;
-    flex-shrink: 0;
 }
