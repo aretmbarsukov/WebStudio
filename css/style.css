@@ -293,7 +293,7 @@
     display: flex;
     gap: 8px;
     padding-left: 400px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
 .offers-list {
@@ -308,9 +308,10 @@
     margin-top: 50px;
 }
 
-.offers-button {
+.offers-button{
     border-radius: 4px;
-    background: var(--team-background);
+    background-color: var(--team-background);
+    border-color: var(--team-background);
 }
 
 .offers-list:hover {
