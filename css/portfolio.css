@@ -1,0 +1,230 @@
+:root {
+    --logo-color: #000;
+    --accent-color: #2196F3;
+    --title-color: #212121;
+    --added-text: #757575;
+    --main-background: #FFF;
+    --team-background: #F5F4FA;
+    --footer-background: #2F303A;
+    --footer-number: rgba(255, 255, 255, 0.60);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.body {
+    font-family: Roboto;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    color: var(--logo-color);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+
+.style1 {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+
+.header-nav {
+    margin-left: 93px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.head-pages {
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+}
+
+.head-pages:hover {
+    color: var(--accent-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+
+.header-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+.head-link {
+    color: var(--added-text);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+}
+
+.head-link:hover {
+    color: var(--accent-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+
+.offers {
+    padding-top: 94px;
+    padding-bottom: 114px;
+}
+
+.offers-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.offers-list {
+    color: var(--title-color);
+    /* text-align: center; */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+    gap: 30px;
+    margin-top: 50px;
+    display: grid;
+    /* gap: 9px; */
+}
+
+.offers-button {
+    border-radius: 4px;
+    background-color: var(--team-background);
+    border-color: var(--team-background);
+    padding: 6px 22px;
+}
+
+.offers-list:hover {
+    color: var(--main-background);
+    /* text-align: center; */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+}
+
+.offers-button:hover {
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.offers-span {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+}
+
+.offers-span:hover {
+    color: var(--main-background);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+}
+
+.offers-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offers-item {
+    /* width: 370px;
+    height: 404px;
+    flex-shrink: 0; */
+    flex-basis: calc((100 - 60px) / 3);
+
+}
+
+.offers-img {
+    width: 100%;
+    /* height: 294px;
+    flex-shrink: 0; */
+}
+
+.offers-div {
+    padding: 20px 24px;
+}
+
+.offers-title {
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+    margin-bottom: 4px;
+}
+
+.offers-text {
+    color: var(--added-text);
+    font-size: 16px;
+    font-weight: 512;
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+}
+
+.footer {
+    background-color: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    color: var(--main-background);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+
+.footer-address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.footer-list {
+    display: grid;
+    gap: 9px;
+}
+
+.footer-link {
+    color: var(--footer-number);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
