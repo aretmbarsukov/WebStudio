@@ -19,6 +19,12 @@
     font-family: Roboto;
 }
 
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header-div {
     display: flex;
     align-items: center;
@@ -68,6 +74,10 @@
     letter-spacing: 0.28px;
 }
 
+.nav-list .nav-iten:nth-child(2) .head-pages {
+    color: var(--accent-color);
+}
+
 .header-list {
     list-style: none;
     display: flex;
@@ -94,7 +104,7 @@
 
 .offers {
     padding-top: 94px;
-    padding-bottom: 114px;
+    padding-bottom: 94px;
 }
 
 .offers-buttons {
@@ -121,6 +131,7 @@
     background-color: var(--team-background);
     border-color: var(--team-background);
     padding: 6px 22px;
+    border: none;
 }
 
 .offers-list:hover {
@@ -165,8 +176,8 @@
     /* width: 370px;
     height: 404px;
     flex-shrink: 0; */
-    flex-basis: calc((100 - 60px) / 3);
-
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #EEE;
 }
 
 .offers-img {
