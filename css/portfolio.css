@@ -168,15 +168,12 @@
 }
 
 .offers-item {
-    width: 370px;
     flex-basis: calc((100% - 60px) / 3);
     border: 1px solid #EEE;
 }
 
 .offers-img {
     width: 100%;
-    /* height: 294px;
-    flex-shrink: 0; */
 }
 
 .offers-div {
