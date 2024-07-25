@@ -170,12 +170,11 @@
 .offers-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .offers-item {
-    /* width: 370px;
-    height: 404px;
-    flex-shrink: 0; */
+    width: 370px;
     flex-basis: calc((100% - 60px) / 3);
     border: 1px solid #EEE;
 }
