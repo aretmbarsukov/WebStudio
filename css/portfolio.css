@@ -102,6 +102,11 @@
     letter-spacing: 0.28px;
 }
 
+.head-icon{
+    width: 16px;
+    height: 12px;
+}
+
 .offers {
     padding-top: 94px;
     padding-bottom: 94px;
