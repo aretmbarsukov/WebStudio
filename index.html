@@ -66,7 +66,7 @@
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-button">
-            <span class="hero-span">Замовити послугу</span>
+            <span class="hero-span" data-modal-open>Замовити послугу</span>
           </button>
         </div>
       </section>
@@ -302,12 +302,6 @@
           </ul>
         </div>
       </section>
-      <!-- постійні клієнти
-      <section class="cliente">
-        <div class="container">
-          <h2 class="cliente-title">Постійні клієнти</h2>
-        </div>
-      </section> -->
     </main>
     <footer class="footer">
       <div class="container footer-box">
@@ -353,28 +347,46 @@
                 </a>
               </div>
             </div>
+            <div class="mailing-div">
+              <p class="mailing-text">Підпишіться на розсилку</p>
+              <input type="text" class="mailing-input">
+              <button type="submit" class="mailing-button">
+                Підписатися
+                <svg class="mailing-svg">
+                  <use href="./imeges/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </address>
       </div>
     </footer>
-    <!-- <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="modal-form">
           <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
           <label for="name" class="madal-label">Ім'я</label>
-          <input type="text" id="name" class="modal-input">
-
+          <input type="text" id="name" class="modal-input" required>
           <label for="phone" class="madal-label">Телефон</label>
-          <input type="text" id="phone" class="modal-input">
-
+          <input type="text" id="phone" class="modal-input" required>
           <label for="mail" class="madal-label">Пошта</label>
-          <input type="text" id="mail" class="modal-input">
-          
+          <input type="text" id="mail" class="modal-input" required>
           <label for="coment" class="madal-label">Коментар</label>
-          <input type="text" id="coment" class="modal-inputt">
-          
+          <textarea name="" id="coment" class="model-comment" placeholder="Введіть текст"></textarea>
+          <label class="modal-check">
+            <input type="checkbox" class="modal-checkbox">
+            <span class="modal-span">Погоджуюся з розсилкою та приймаю </span>
+            <a href="#" class="modal-link">Умови договору</a>
+          </label>
+          <button type="submit" class="modal-btn">Відправити</button>
+          <button type="button" class="modal-close" data-modal-close>
+            <svg class="modal-exit">
+              <use href="./imeges/symbol-defs.svg#icon-cross"></use>
+            </svg>
+          </button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
