@@ -447,12 +447,11 @@ li.regular-item:hover {
 
 .div-footer{
     display: flex;
-    /* margin-top: 12px; */
+    align-items: baseline;
 }
 
 .box-footer{
     margin-left: 70px;
-    margin-top: 12px;
 }
 
 .footer-links-container {
@@ -535,8 +534,6 @@ li.regular-item:hover {
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #FFF;
-    /* display: flex;
-    justify-content: center; */
     align-items: center;
     text-align: center;
     font-family: Roboto;
@@ -607,6 +604,18 @@ li.regular-item:hover {
     letter-spacing: 0.12px;
 }
 
+.modal-box{
+    position: relative;
+}
+
+.svg-box{
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+}
+
 .modal-input{
     width: 448px;
     height: 40px;
@@ -615,6 +624,7 @@ li.regular-item:hover {
     margin-top: 4px;
     display: block;
     margin-bottom: 10px;
+    padding-left: 42px;
 }
 
 .modal-inputt{
