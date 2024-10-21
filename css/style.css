@@ -73,6 +73,21 @@
     letter-spacing: 0.28px;
 }
 
+.nav-iten{
+    position: relative;
+}
+
+.nav-iten:hover::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    bottom: -34px;
+}
+
 .nav-list .nav-iten:first-child .head-pages {
     color: var(--accent-color);
 }
@@ -325,7 +340,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     border-radius: 50%;
     padding: 12px;
     width: 44px;
@@ -358,13 +372,12 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
-    /* margin-top: 94px; */
     margin-bottom: 50px;
 }
 
 .regular-list{
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
 }
 
 .regular-item{
@@ -372,11 +385,6 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-
-/* .regular-item:hover , .regular-svg:hover{
-    fill: #2196F3;
-    border: 1px solid #2196F3;
-} */
 
 li.regular-item:hover {
     border-color: #2196F3;
@@ -455,8 +463,7 @@ li.regular-item:hover {
 }
 
 .footer-links-container {
-    display: flex;  
-    /* justify-content: center; */
+    display: flex;
     gap: 10px;
     margin-top: 20px;
 }
@@ -475,7 +482,6 @@ li.regular-item:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     border-radius: 50%;
     padding: 12px;
     width: 44px;
@@ -491,12 +497,6 @@ li.regular-item:hover {
 .footer-address{
     display: flex;
 }
-
-/* .footer-networks{
-    width: 20px;
-    height: 20px;
-    fill: var(--added-text);
-} */
 
 .footer-link:hover {
     color: var(--accent-color);
@@ -608,6 +608,13 @@ li.regular-item:hover {
     position: relative;
 }
 
+.modal-box:hover{
+    fill: var(--accent-color);
+    .modal-input{
+        border-color: var(--accent-color);
+    }
+}
+
 .svg-box{
     position: absolute;
     top: 11px;
@@ -716,8 +723,4 @@ li.regular-item:hover {
     width: 11px;
     height: 11px;
     fill: black;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
-

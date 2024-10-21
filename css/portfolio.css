@@ -22,6 +22,7 @@
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-div{
@@ -71,6 +72,21 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+}
+
+.nav-iten{
+    position: relative;
+}
+
+.nav-iten:hover::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    bottom: -34px;
 }
 
 .nav-list .nav-iten:first-child .head-pages {
@@ -128,7 +144,6 @@
 
 .offers-list {
     color: var(--title-color);
-    /* text-align: center; */
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
@@ -136,7 +151,6 @@
     gap: 30px;
     margin-top: 50px;
     display: grid;
-    /* gap: 9px; */
 }
 
 .offers-button {
@@ -155,7 +169,6 @@
 
 .offers-list:hover {
     color: var(--main-background);
-    /* text-align: center; */
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
@@ -183,7 +196,6 @@
 .offers-item {
     flex-basis: calc((100% - 60px) / 3);
     border: 1px solid #EEE;
-    /* box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16); */
 }
 
 .offers-item:hover{
@@ -214,54 +226,6 @@
     line-height: 1.87;
     letter-spacing: 0.48px;
 }
-
-/* .footer {
-    background-color: var(--footer-background);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    height: 100%;
-}
-
-.footer-logo {
-    color: var(--main-background);
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.38;
-    letter-spacing: 0.78px;
-}
-
-.footer-address {
-    margin-top: 20px;
-    font-style: normal;
-}
-
-.address-div {
-    display: grid;
-    gap: 9px;
-}
-
-.address-link {
-    color: var(--main-background);
-    font-style: normal;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-}
-
-.footer-list {
-    display: grid;
-    gap: 9px;
-}
-
-.footer-link {
-    color: var(--footer-number);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-} */
 
 .footer {
     background-color: var(--footer-background);
@@ -299,17 +263,15 @@
 
 .div-footer{
     display: flex;
-    /* margin-top: 12px; */
+    align-items: baseline;
 }
 
 .box-footer{
     margin-left: 70px;
-    margin-top: 12px;
 }
 
 .footer-links-container {
-    display: flex;  
-    /* justify-content: center; */
+    display: flex;
     gap: 10px;
     margin-top: 20px;
 }
@@ -328,7 +290,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     border-radius: 50%;
     padding: 12px;
     width: 44px;
@@ -345,16 +306,57 @@
     display: flex;
 }
 
-/* .footer-networks{
-    width: 20px;
-    height: 20px;
-    fill: var(--added-text);
-} */
-
 .footer-link:hover {
-    color: var(--accent-color);  /* Синій фон при наведенні */
+    color: var(--accent-color);
 }
 
 .footer-link:hover .team-networks {
-    fill: var(--main-background);             /* Білий колір іконки при наведенні */
+    fill: var(--main-background);
+}
+
+.mailing-div{
+    margin-left: 93px;
+}
+
+.mailing-text{
+    color: var(--main-background);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.mailing-input{
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+}
+
+.mailing-button{
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    border: none;
+    padding: 10px 28px;
+    margin-left: 12px;
+}
+
+.mailing-svg{
+    fill: #FFF;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 }
