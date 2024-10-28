@@ -730,3 +730,24 @@ li.regular-item:hover .regular-svg {
     height: 11px;
     fill: black;
 }
+
+.element {
+    color: #333; /* Звичайний колір тексту */
+    /* background-color: #f0f0f0; Звичайний фон */
+    box-shadow: none; /* Без тіні в стані "по замовчуванню" */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Переходи для конкретних властивостей */
+}
+
+.element:hover, 
+.element:focus {
+    /* background-color: #e0eaff; Фон при hover і focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь при hover і focus */
+}
+
+/* Додатковий фокус для клавіатурного доступу */
+.element:focus {
+    outline: 2px solid #0056b3; /* Обведення для доступності */
+    outline-offset: 4px;
+}
