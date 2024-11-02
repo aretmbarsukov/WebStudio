@@ -63,6 +63,7 @@
     line-height: 1.14;
     letter-spacing: 0.28px;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .head-pages:hover,
@@ -87,6 +88,7 @@
     position: absolute;
     left: 0;
     bottom: -34px;
+    border-radius: 2px;
 }
 
 .nav-list .nav-iten:first-child .head-pages {
@@ -351,19 +353,23 @@
     height: 44px;
 }
 
+.team-link:hover,
+.team-link:focus{
+    background-color: var(--accent-color);
+    fill: var(--main-background);
+}
+
+.team-link:hover, 
+.team-link:focus{
+    .team-networks{
+        fill: var(--main-background);     
+    }  
+}
+
 .team-networks{
     width: 20px;
     height: 20px;
     fill: var(--added-text);
-}
-
-.team-link:hover,
-.team-link:focus{
-    background-color: var(--accent-color);
-}
-
-.team-link:hover, .team-link:focus .team-networks {
-    fill: var(--main-background);
 }
 
 .regular{
@@ -392,12 +398,17 @@
     border-radius: 4px;
 }
 
-li.regular-item:hover {
+li.regular-item:hover,
+li.regular-item:focus {
     border-color: #2196F3;
     color: #2196F3;
   }
   
-li.regular-item:hover .regular-svg {
+li.regular-item:hover .regular-svg{
+    fill: #2196F3;
+}
+
+li.regular-item:focus .regular-svg{
     fill: #2196F3;
 }
 
@@ -731,20 +742,22 @@ li.regular-item:hover .regular-svg {
     fill: black;
 }
 
+.modal-close:hover, 
+.modal-close:focus{
+    .modal-exit{
+        fill: var(--accent-color);
+    }
+}
+
 .element {
-    color: #333;
+    color: var(--added-text);
     box-shadow: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
                 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.element:hover, 
 .element:focus {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.element:focus {
-    outline: 2px solid #0056b3;
+    outline: 2px solid var(--accent-color);
     outline-offset: 4px;
 }
