@@ -5,6 +5,7 @@
     --added-text: #757575;
     --main-background: #FFF;
     --team-background: #F5F4FA;
+    --icon-team: #AFB1B8;
     --footer-background: #2F303A;
     --footer-number: rgba(255, 255, 255, 0.60);
 }
@@ -198,32 +199,34 @@
     border: 1px solid #EEE;
 }
 
-.offers-img{
+.item-offers {
     position: relative;
+    overflow: hidden;
 }
 
-.offers-item:hover{
-    .text-offers{
-        opacity: 1;
-    }
+.offers-img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.text-offers{
+.text-offers {
     position: absolute;
     bottom: -100%;
     left: 0;
-    background-color: rgba(33, 150, 243, 0.90);
-    padding: 63px 24px;
     width: 100%;
     height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
     color: #FFF;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.54px;
+    padding: 63px 24px;
+    box-sizing: border-box;
     opacity: 0;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.item-offers:hover .text-offers {
+    bottom: 0;
+    opacity: 1;
 }
 
 .offers-item:hover{
