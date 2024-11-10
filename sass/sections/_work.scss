@@ -1,9 +1,8 @@
 .work {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.work-title {
+&-title {
     color: var(--title-color);
     text-align: center;
     font-size: 36px;
@@ -13,23 +12,23 @@
     margin-bottom: 50px;
 }
 
-.work-list {
+&-list {
     display: flex;
     gap: 30px;
 }
 
-.work-item {
+&-item {
     position: relative;
     text-align: center;
 }
 
-.work-img {
+&-img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.work-description {
+&-description {
     font-family: Roboto;
     position: absolute;
     bottom: 0;
@@ -41,4 +40,5 @@
     font-weight: 700;
     padding: 27px 0;
     text-align: center;
+}
 }
