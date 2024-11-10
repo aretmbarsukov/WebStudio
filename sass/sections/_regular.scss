@@ -1,0 +1,45 @@
+.regular{
+    padding: 94px 0;
+}
+
+.regular-title{
+    color: var(--title-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.regular-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.regular-item{
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+li.regular-item:hover,
+li.regular-item:focus {
+    border-color: #2196F3;
+    color: #2196F3;
+  }
+  
+li.regular-item:hover .regular-svg{
+    fill: #2196F3;
+}
+
+li.regular-item:focus .regular-svg{
+    fill: #2196F3;
+}
+
+.regular-svg{
+    fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
+}
