@@ -7,8 +7,8 @@
     padding-bottom: 200px;
     text-align: center;
 
-&-title {
-    color: var(--main-background);
+&__title {
+    color: $main-background;
     text-align: center;
     font-size: 44px;
     font-weight: 900;
@@ -20,8 +20,8 @@
     margin-right: 236px;
 }
 
-&-span {
-    color: var(--main-background);
+&__span {
+    color: $main-background;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -29,7 +29,7 @@
     letter-spacing: 0.96px;
 }
 
-&-button {
+&__button {
     border-radius: 4px;
     background: rgba(33, 150, 243, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);

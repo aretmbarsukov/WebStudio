@@ -1,11 +1,11 @@
 .address{
-&-div {
+&__div {
     display: grid;
     gap: 9px;
 }
 
-&-link {
-    color: var(--main-background);
+&__link {
+    color: $main-background;
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
@@ -13,18 +13,18 @@
     letter-spacing: 0.42px;
 }
 
-&-link:hover{
-    color: var(--accent-color);
+&__link:hover{
+    color: $accent-color;
 }
 }
 
 .footer {
-    background-color: var(--footer-background);
+    background-color: $footer-background;
     padding-top: 60px;
     padding-bottom: 60px;
 
-&-logo {
-    color: var(--main-background);
+&__logo {
+    color: $main-background;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -32,33 +32,33 @@
     letter-spacing: 0.78px;
 }
 
-&-address{
+&__address{
     margin-top: 20px;
     font-style: normal;
 }
 
-&-list{
+&__list{
     margin-top: 9px;
     display: grid;
     gap: 9px;
 }
 
-&-link {
-    color: var(--footer-number);
+&__link {
+    color: $footer-number;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
 
-&-links-container {
+&__links-container {
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
 
-&-text{
-    color: var(--main-background);
+&__text{
+    color: $main-background;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
@@ -67,7 +67,7 @@
     text-transform: uppercase;
 }
 
-&-linkk {
+&__linkk {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,43 +75,43 @@
     padding: 12px;
     width: 44px;
     height: 44px;
-    fill: var(--main-background);
+    fill: $main-background;
     background-color: rgba(255, 255, 255, 0.10);
 }
 
-&-linkk:hover{
-    background-color: var(--accent-color);
+&__linkk:hover{
+    background-color: $accent-color;
 }
 
-&-address{
+&__address{
     display: flex;
 }
 
-&-link:hover {
-    color: var(--accent-color);
+&__link:hover {
+    color: $accent-color;
 }
 
-&-link:hover .team-networks {
-    fill: var(--main-background);
+&__link:hover .team-networks {
+    fill: $main-background;
 }
 }
 
-.div-footer{
+.div__footer{
     display: flex;
     align-items: baseline;
 }
 
-.box-footer{
+.box__footer{
     margin-left: 70px;
 }
 
 .mailing{
-&-div{
+&__div{
     margin-left: 93px;
 }
 
-&-text{
-    color: var(--main-background);
+&__text{
+    color: $main-background;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
@@ -119,7 +119,7 @@
     text-transform: uppercase;
 }
 
-&-input{
+&__input{
     width: 358px;
     height: 50px;
     border-radius: 4px;
@@ -129,11 +129,11 @@
     margin-top: 20px;
 }
 
-&-button{
+&__button{
     border-radius: 4px;
-    background: #2196F3;
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #FFF;
+    color: $main-background;
     align-items: center;
     text-align: center;
     font-family: Roboto;
@@ -146,8 +146,8 @@
     margin-left: 12px;
 }
 
-&-svg{
-    fill: #FFF;
+&__svg{
+    fill: $main-background;
     width: 24px;
     height: 24px;
     margin-left: 10px;

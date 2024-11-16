@@ -2,24 +2,24 @@
     padding-top: 24px;
     padding-bottom: 25px;
 
-&-div{
+&__div{
     display: flex;
     align-items: center;
 }
 
-&-logo {
-    color: var(--logo-color);
+&__logo {
+    color: $logo-color;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
 }
 
-&-nav {
+&__nav {
     margin-left: 93px;
 }
 
-&-list {
+&__list {
     list-style: none;
     display: flex;
     gap: 50px;
@@ -28,7 +28,7 @@
 }
 
 .style1 {
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -37,36 +37,36 @@
 }
 
 .nav{
-&-list{
+&__list{
     list-style: none;
     display: flex;
     gap: 50px;
 }
 
-&-iten{
+&__iten{
     position: relative;
 }
 
-&-iten:hover::after{
+&__iten:hover::after{
     content: "";
     display: block;
     width: 100%;
     height: 5px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     position: absolute;
     left: 0;
     bottom: -34px;
     border-radius: 2px;
 }
 
-&-list .nav-iten:first-child .head-pages {
-    color: var(--accent-color);
+&__list .nav-iten:first-child .head-pages {
+    color: $accent-color;
 }
 }
 
 .head{
-&-pages {
-    color: var(--title-color);
+&__pages {
+    color: $title-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -75,20 +75,20 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-&-pages:hover,
-&-pages:focus {
-    color: var(--accent-color);
+&__pages:hover,
+&__pages:focus {
+    color: $accent-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
 
-&-link {
+&__link {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    color: var(--added-text);
+    color: $added-text;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -96,26 +96,26 @@
     text-decoration: none;
 }
 
-&-icon {
-    fill: var(--added-text);
+&__icon {
+    fill: $added-text;
     width: 16px;
     height: 12px;
 }
 
-&-icon-phone {
+&__icon__phone {
     width: 10px;
     height: 16px;
 }
 
-&-link:hover {
-    color: var(--accent-color);
+&__link:hover {
+    color: $accent-color;
 }
 
-&-link:hover, .head-link:focus {
-    color: var(--accent-color);
+&__link:hover, .head-link:focus {
+    color: $accent-color;
 }
 
-&-link:hover .head-icon, .head-link:focus .head-icon {
-    fill: var(--accent-color);
+&__link:hover .head-icon, .head-link:focus .head-icon {
+    fill: $accent-color;
 }
 }

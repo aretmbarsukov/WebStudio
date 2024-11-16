@@ -2,8 +2,8 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-&-title {
-    color: var(--title-color);
+&__title {
+    color: $title-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -12,30 +12,30 @@
     margin-bottom: 50px;
 }
 
-&-list {
+&__list {
     display: flex;
     gap: 30px;
 }
 
-&-item {
+&__item {
     position: relative;
     text-align: center;
 }
 
-&-img {
+&__img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-&-description {
+&__description {
     font-family: Roboto;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(47, 48, 58, 0.80); /* Чорний прозорий фон */
-    color: var(--main-background);
+    color: $main-background;
     font-size: 18px;
     font-weight: 700;
     padding: 27px 0;

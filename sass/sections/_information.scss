@@ -1,48 +1,48 @@
 .information{
     padding-top: 94px;
 
-&-list{
+&__list{
     flex-shrink: 0;
     display: flex;
     gap: 30px;
 }
 
-&-item{
+&__item{
     width: 270px;
     flex-shrink: 0;
 }
 
-&-item::before {
+&__item::before {
     content: "";
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
     border-radius: 4px;
-    background: var(--team-background);
+    background: $team-background;
     display: block;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
 }
 
-&-item:nth-child(1)::before{
+&__item:nth-child(1)::before{
     background-image: url(../imeges/antenna.jpg);
 }
 
-&-item:nth-child(2)::before {
+&__item:nth-child(2)::before {
     background-image: url(../imeges/clock.jpg);
 }
 
-&-item:nth-child(3)::before {
+&__item:nth-child(3)::before {
     background-image: url(../imeges/diagram.jpg);
 }
 
-&-item:nth-child(4)::before {
+&__item:nth-child(4)::before {
     background-image: url(../imeges/astronaut.jpg);
 }
 
-&-title {
-    color: var(--title-color);
+&__title {
+    color: $title-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -50,8 +50,8 @@
     text-transform: uppercase;
 }
 
-&-text {
-    color: var(--added-text);
+&__text {
+    color: $added-text;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;

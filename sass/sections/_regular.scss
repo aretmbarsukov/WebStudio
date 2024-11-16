@@ -1,8 +1,8 @@
 .regular{
     padding: 94px 0;
 
-&-title{
-    color: var(--title-color);
+&__title{
+    color: $title-color;
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -12,34 +12,35 @@
     margin-bottom: 50px;
 }
 
-&-list{
+&__list{
     display: flex;
     justify-content: space-between;
 }
 
-&-item{
+&__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 16px 32px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid $icon-team;
     border-radius: 4px;
 }
 
-&-svg{
+&__svg{
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
 }
 }
 
-li.regular-item:hover,
-li.regular-item:focus {
-    border-color: #2196F3;
-    color: #2196F3;
-  }
-  
-li.regular-item:hover .regular-svg{
-    fill: #2196F3;
+a.regular__link:hover,
+a.regular__link:focus {
+    border-color: $accent-color;
+    color: $accent-color;
 }
-
-li.regular-item:focus .regular-svg{
-    fill: #2196F3;
+  
+a.regular__link:hover .regular__svg,
+a.regular__link:focus .regular__svg{
+    fill: $accent-color;
+    border-color: $accent-color;
 }
