@@ -55,11 +55,11 @@
     background-color: $accent-color;
     position: absolute;
     left: 0;
-    bottom: -34px;
+    bottom: -35px;
     border-radius: 2px;
 }
 
-&__list .nav-iten:first-child .head-pages {
+&__list .nav__iten:first-child .head__pages {
     color: $accent-color;
 }
 }
@@ -111,11 +111,11 @@
     color: $accent-color;
 }
 
-&__link:hover, .head-link:focus {
+&__link:hover, .head__link:focus {
     color: $accent-color;
 }
 
-&__link:hover .head-icon, .head-link:focus .head-icon {
+&__link:hover .head__icon, .head__link:focus .head__icon {
     fill: $accent-color;
 }
 }

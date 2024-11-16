@@ -73,10 +73,10 @@ img {
   background-color: #2196F3;
   position: absolute;
   left: 0;
-  bottom: -34px;
+  bottom: -35px;
   border-radius: 2px;
 }
-.nav__list .nav-iten:first-child .head-pages {
+.nav__list .nav__iten:first-child .head__pages {
   color: #2196F3;
 }
 
@@ -119,10 +119,10 @@ img {
 .head__link:hover {
   color: #2196F3;
 }
-.head__link:hover, .head .head-link:focus {
+.head__link:hover, .head .head__link:focus {
   color: #2196F3;
 }
-.head__link:hover .head-icon, .head .head-link:focus .head-icon {
+.head__link:hover .head__icon, .head .head__link:focus .head__icon {
   fill: #2196F3;
 }
 
@@ -421,7 +421,7 @@ a.regular__link:focus .regular__svg {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
-.footer__links-container {
+.footer__links__container {
   display: flex;
   gap: 10px;
   margin-top: 20px;
@@ -479,6 +479,12 @@ a.regular__link:focus .regular__svg {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+.mailing__boxx {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .mailing__input {
   width: 358px;
   height: 50px;
@@ -486,7 +492,9 @@ a.regular__link:focus .regular__svg {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-top: 20px;
+  padding-top: 15px;
+  padding-left: 16px;
+  resize: none;
 }
 .mailing__button {
   border-radius: 4px;
@@ -503,12 +511,18 @@ a.regular__link:focus .regular__svg {
   border: none;
   padding: 10px 28px;
   margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .mailing__svg {
   fill: #FFF;
   width: 24px;
   height: 24px;
   margin-left: 10px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .backdrop {
@@ -535,7 +549,7 @@ a.regular__link:focus .regular__svg {
   padding: 40px;
 }
 .modal-title {
-  color: var(--title-color);
+  color: #212121;
   text-align: center;
   font-family: Roboto;
   font-size: 20px;
@@ -546,7 +560,7 @@ a.regular__link:focus .regular__svg {
   margin-bottom: 12px;
 }
 .modal__label {
-  color: var(--added-text);
+  color: #757575;
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -558,10 +572,10 @@ a.regular__link:focus .regular__svg {
   position: relative;
 }
 .modal__box:hover {
-  fill: var(--accent-color);
+  fill: #2196F3;
 }
-.modal__box:hover .modal-input {
-  border-color: var(--accent-color);
+.modal__box:hover .modal__input {
+  border-color: #2196F3;
 }
 .modal__input {
   width: 448px;
@@ -615,7 +629,7 @@ a.regular__link:focus .regular__svg {
   margin-right: 4px;
 }
 .modal__link {
-  color: var(--accent-color);
+  color: #2196F3;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -625,9 +639,9 @@ a.regular__link:focus .regular__svg {
 }
 .modal__btn {
   border-radius: 4px;
-  background: var(--accent-color);
+  background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: var(--main-background);
+  color: #FFF;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -654,8 +668,8 @@ a.regular__link:focus .regular__svg {
   height: 11px;
   fill: black;
 }
-.modal__close:hover .modal-exit, .modal__close:focus .modal-exit {
-  fill: var(--accent-color);
+.modal__close:hover .modal__exit, .modal__close:focus .modal__exit {
+  fill: #2196F3;
 }
 
 .svg__box {

@@ -22,7 +22,7 @@
     padding: 40px;
 
     &-title{
-    color: var(--title-color);
+    color: $title-color;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
@@ -34,7 +34,7 @@
 }
 
 &__label{
-    color: var(--added-text);
+    color: $added-text;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
@@ -48,9 +48,9 @@
 }
 
 &__box:hover{
-    fill: var(--accent-color);
-    .modal-input{
-        border-color: var(--accent-color);
+    fill: $accent-color;
+    .modal__input{
+        border-color: $accent-color;
     }
 }
 
@@ -102,7 +102,7 @@
 }
 
 &__span{
-    color: #757575;
+    color: $added-text;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
@@ -113,7 +113,7 @@
 }
 
 &__link{
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
@@ -124,9 +124,9 @@
 
 &__btn{
     border-radius: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--main-background);
+    color: $main-background;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -158,8 +158,8 @@
 
 &__close:hover, 
 &__close:focus{
-    .modal-exit{
-        fill: var(--accent-color);
+    .modal__exit{
+        fill: $accent-color;
     }
 }
 }
