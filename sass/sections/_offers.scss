@@ -9,7 +9,7 @@
 }
 
 &-list {
-    color: var(--title-color);
+    color: $title-color;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
@@ -21,11 +21,11 @@
 
 &-button {
     border-radius: 4px;
-    background-color: var(--team-background);
-    border-color: var(--team-background);
+    background-color: $team-background;
+    border-color: $team-background;
     padding: 6px 22px;
     border: none;
-    color: var(--title-color);
+    color: $title-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -34,7 +34,7 @@
 }
 
 &-list:hover {
-    color: var(--main-background);
+    color: $main-background;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
@@ -43,9 +43,9 @@
 
 &-button:hover {
     border-radius: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-    color: var(--main-background);
+    color: $main-background;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -83,7 +83,7 @@
 }
 
 &-title {
-    color: var(--title-color);
+    color: $title-color;
     font-size: 17px;
     font-weight: 700;
     line-height: 2;
@@ -92,7 +92,7 @@
 }
 
 &-text {
-    color: var(--added-text);
+    color: $added-text;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.87;

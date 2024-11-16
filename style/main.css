@@ -26,6 +26,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
 }
 .header__div {
   display: flex;
@@ -690,7 +691,7 @@ a.regular__link:focus .regular__svg {
   justify-content: center;
 }
 .offers-list {
-  color: var(--title-color);
+  color: #212121;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
@@ -701,11 +702,11 @@ a.regular__link:focus .regular__svg {
 }
 .offers-button {
   border-radius: 4px;
-  background-color: var(--team-background);
-  border-color: var(--team-background);
+  background-color: #F5F4FA;
+  border-color: #F5F4FA;
   padding: 6px 22px;
   border: none;
-  color: var(--title-color);
+  color: #212121;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -713,7 +714,7 @@ a.regular__link:focus .regular__svg {
   letter-spacing: 0.48px;
 }
 .offers-list:hover {
-  color: var(--main-background);
+  color: #FFF;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
@@ -721,9 +722,9 @@ a.regular__link:focus .regular__svg {
 }
 .offers-button:hover {
   border-radius: 4px;
-  background: var(--accent-color);
+  background: #2196F3;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-  color: var(--main-background);
+  color: #FFF;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -754,7 +755,7 @@ a.regular__link:focus .regular__svg {
   padding: 20px 24px;
 }
 .offers-title {
-  color: var(--title-color);
+  color: #212121;
   font-size: 17px;
   font-weight: 700;
   line-height: 2;
@@ -762,7 +763,7 @@ a.regular__link:focus .regular__svg {
   margin-bottom: 4px;
 }
 .offers-text {
-  color: var(--added-text);
+  color: #757575;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
