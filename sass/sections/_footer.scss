@@ -11,10 +11,9 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
-}
-
-&__link:hover{
+&:hover{
     color: $accent-color;
+}
 }
 }
 
@@ -49,9 +48,17 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+
+&:hover {
+    color: $accent-color;
 }
 
-&__links__container {
+&:hover .team-networks {
+    fill: $main-background;
+}
+}
+
+&__linkss {
     display: flex;
     gap: 10px;
     margin-top: 20px;
@@ -77,22 +84,14 @@
     height: 44px;
     fill: $main-background;
     background-color: rgba(255, 255, 255, 0.10);
-}
 
-&__linkk:hover{
+&:hover{
     background-color: $accent-color;
+}
 }
 
 &__address{
     display: flex;
-}
-
-&__link:hover {
-    color: $accent-color;
-}
-
-&__link:hover .team-networks {
-    fill: $main-background;
 }
 }
 

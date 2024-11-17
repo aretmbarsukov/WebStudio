@@ -10,9 +10,8 @@
 &__item{
     width: 270px;
     flex-shrink: 0;
-}
 
-&__item::before {
+&::before {
     content: "";
     margin-bottom: 30px;
     width: 270px;
@@ -25,20 +24,21 @@
     background-size: 70px;
 }
 
-&__item:nth-child(1)::before{
+&:nth-child(1)::before{
     background-image: url(../imeges/antenna.jpg);
 }
 
-&__item:nth-child(2)::before {
+&:nth-child(2)::before {
     background-image: url(../imeges/clock.jpg);
 }
 
-&__item:nth-child(3)::before {
+&:nth-child(3)::before {
     background-image: url(../imeges/diagram.jpg);
 }
 
-&__item:nth-child(4)::before {
+&:nth-child(4)::before {
     background-image: url(../imeges/astronaut.jpg);
+}
 }
 
 &__title {

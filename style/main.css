@@ -39,6 +39,14 @@ img {
   line-height: 1.38;
   letter-spacing: 0.78px;
 }
+.header__span {
+  color: #2196F3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+}
 .header__nav {
   margin-left: 93px;
 }
@@ -47,15 +55,6 @@ img {
   display: flex;
   gap: 50px;
   margin-left: auto;
-}
-
-.style1 {
-  color: #2196F3;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: 0.78px;
 }
 
 .nav__list {
@@ -90,7 +89,7 @@ img {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.head__pages:hover, .head__pages:focus {
+.head:hover, .head:focus {
   color: #2196F3;
   font-size: 14px;
   font-weight: 500;
@@ -108,6 +107,15 @@ img {
   letter-spacing: 0.28px;
   text-decoration: none;
 }
+.head__link:hover {
+  color: #2196F3;
+}
+.head__link:hover, .head__link .head__link:focus {
+  color: #2196F3;
+}
+.head__link:hover .head__icon, .head__link .head__link:focus .head__icon {
+  fill: #2196F3;
+}
 .head__icon {
   fill: #757575;
   width: 16px;
@@ -116,15 +124,6 @@ img {
 .head__icon__phone {
   width: 10px;
   height: 16px;
-}
-.head__link:hover {
-  color: #2196F3;
-}
-.head__link:hover, .head .head__link:focus {
-  color: #2196F3;
-}
-.head__link:hover .head__icon, .head .head__link:focus .head__icon {
-  fill: #2196F3;
 }
 
 .hero {
@@ -303,7 +302,7 @@ img {
   margin-top: 10px;
   margin-bottom: 16px;
 }
-.team__links__container {
+.team__linkss {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -422,7 +421,13 @@ a.regular__link:focus .regular__svg {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
-.footer__links__container {
+.footer__link:hover {
+  color: #2196F3;
+}
+.footer__link:hover .team-networks {
+  fill: #FFF;
+}
+.footer__linkss {
   display: flex;
   gap: 10px;
   margin-top: 20px;
@@ -452,12 +457,6 @@ a.regular__link:focus .regular__svg {
 }
 .footer__address {
   display: flex;
-}
-.footer__link:hover {
-  color: #2196F3;
-}
-.footer__link:hover .team-networks {
-  fill: #FFF;
 }
 
 .div__footer {
@@ -664,13 +663,13 @@ a.regular__link:focus .regular__svg {
   top: 8px;
   right: 8px;
 }
+.modal__close:hover .modal__exit, .modal__close:focus .modal__exit {
+  fill: #2196F3;
+}
 .modal__exit {
   width: 11px;
   height: 11px;
   fill: black;
-}
-.modal__close:hover .modal__exit, .modal__close:focus .modal__exit {
-  fill: #2196F3;
 }
 
 .svg__box {
@@ -685,12 +684,12 @@ a.regular__link:focus .regular__svg {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.offers-buttons {
+.offers__buttons {
   display: flex;
   gap: 8px;
   justify-content: center;
 }
-.offers-list {
+.offers__list {
   color: #212121;
   font-size: 16px;
   font-weight: 500;
@@ -700,7 +699,7 @@ a.regular__link:focus .regular__svg {
   margin-top: 50px;
   display: grid;
 }
-.offers-button {
+.offers__button {
   border-radius: 4px;
   background-color: #F5F4FA;
   border-color: #F5F4FA;
@@ -713,14 +712,7 @@ a.regular__link:focus .regular__svg {
   line-height: 1.62;
   letter-spacing: 0.48px;
 }
-.offers-list:hover {
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.48px;
-}
-.offers-button:hover {
+.offers__button:hover {
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -731,30 +723,37 @@ a.regular__link:focus .regular__svg {
   line-height: 1.62;
   letter-spacing: 0.48px;
 }
-.offers-list {
+.offers__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.offers-item {
+.offers__list:hover {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+}
+.offers__item {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #EEE;
 }
-.offers-img {
+.offers__img {
   width: 100%;
   height: auto;
   display: block;
 }
-.offers-item:hover {
+.offers__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
-.offers-img {
+.offers__img {
   width: 100%;
 }
-.offers-div {
+.offers__div {
   padding: 20px 24px;
 }
-.offers-title {
+.offers__title {
   color: #212121;
   font-size: 17px;
   font-weight: 700;
@@ -762,7 +761,7 @@ a.regular__link:focus .regular__svg {
   letter-spacing: 1.08px;
   margin-bottom: 4px;
 }
-.offers-text {
+.offers__text {
   color: #757575;
   font-size: 16px;
   font-weight: 400;
@@ -770,12 +769,16 @@ a.regular__link:focus .regular__svg {
   letter-spacing: 0.48px;
 }
 
-.item-offers {
+.item__offers {
   position: relative;
   overflow: hidden;
 }
+.item__offers:hover .text__offers {
+  bottom: 0;
+  opacity: 1;
+}
 
-.text-offers {
+.text__offers {
   position: absolute;
   bottom: -100%;
   left: 0;
@@ -787,9 +790,4 @@ a.regular__link:focus .regular__svg {
   box-sizing: border-box;
   opacity: 0;
   transition: bottom 0.3s ease, opacity 0.3s ease;
-}
-
-.item-offers:hover .text-offers {
-  bottom: 0;
-  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

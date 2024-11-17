@@ -49,7 +49,7 @@
     margin-bottom: 16px;
 }
 
-&__links__container {
+&__linkss {
     display: flex;  
     justify-content: center;
     gap: 10px;
@@ -63,20 +63,18 @@
     padding: 12px;
     width: 44px;
     height: 44px;
-}
-
-&__link:hover,
-&__link:focus{
+&:hover,
+&:focus{
     background-color: $accent-color;
-    fill: $main-background;
-     
+    fill: $main-background;   
 }
 
-&__link:hover, 
-&__link:focus{
+&:hover, 
+&:focus{
     .team__networks{
         fill: $main-background;     
     } 
+}
 }
 
 &__networks{

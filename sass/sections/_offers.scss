@@ -2,13 +2,13 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-&-buttons {
+&__buttons {
     display: flex;
     gap: 8px;
     justify-content: center;
 }
 
-&-list {
+&__list {
     color: $title-color;
     font-size: 16px;
     font-weight: 500;
@@ -17,9 +17,11 @@
     gap: 30px;
     margin-top: 50px;
     display: grid;
+
+
 }
 
-&-button {
+&__button {
     border-radius: 4px;
     background-color: $team-background;
     border-color: $team-background;
@@ -31,17 +33,8 @@
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.48px;
-}
-
-&-list:hover {
-    color: $main-background;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.48px;
-}
-
-&-button:hover {
+    
+&:hover {
     border-radius: 4px;
     background: $accent-color;
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -52,37 +45,46 @@
     line-height: 1.62;
     letter-spacing: 0.48px;
 }
+}
 
-&-list {
+&__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+&:hover {
+    color: $main-background;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+}
 }
 
-&-item {
+&__item {
     flex-basis: calc((100% - 60px) / 3);
     border: 1px solid #EEE;
 }
 
-&-img {
+&__img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-&-item:hover{
+&__item:hover{
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
-&-img {
+&__img {
     width: 100%;
 }
 
-&-div {
+&__div {
     padding: 20px 24px;
 }
 
-&-title {
+&__title {
     color: $title-color;
     font-size: 17px;
     font-weight: 700;
@@ -91,7 +93,7 @@
     margin-bottom: 4px;
 }
 
-&-text {
+&__text {
     color: $added-text;
     font-size: 16px;
     font-weight: 400;
@@ -100,12 +102,17 @@
 }
 }
 
-.item-offers {
+.item__offers {
     position: relative;
     overflow: hidden;
+
+&:hover .text__offers {
+    bottom: 0;
+    opacity: 1;
+}
 }
 
-.text-offers {
+.text__offers {
     position: absolute;
     bottom: -100%;
     left: 0;
@@ -117,9 +124,4 @@
     box-sizing: border-box;
     opacity: 0;
     transition: bottom 0.3s ease, opacity 0.3s ease;
-}
-
-.item-offers:hover .text-offers {
-    bottom: 0;
-    opacity: 1;
 }

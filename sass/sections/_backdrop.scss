@@ -45,13 +45,13 @@
 
 &__box{
     position: relative;
-}
 
-&__box:hover{
+&:hover{
     fill: $accent-color;
     .modal__input{
         border-color: $accent-color;
     }
+}
 }
 
 &__input{
@@ -148,19 +148,19 @@
     position: absolute;
     top: 8px;
     right: 8px;
+
+&:hover, 
+&:focus{
+    .modal__exit{
+        fill: $accent-color;
+    }
+}
 }
 
 &__exit{
     width: 11px;
     height: 11px;
     fill: black;
-}
-
-&__close:hover, 
-&__close:focus{
-    .modal__exit{
-        fill: $accent-color;
-    }
 }
 }
 
