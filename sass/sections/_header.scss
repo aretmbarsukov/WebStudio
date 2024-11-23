@@ -68,10 +68,11 @@
 .head{
 &__pages {
     color: $title-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
+    // font-size: 14px;
+    // font-weight: 500;
+    // line-height: 1.14;
+    // letter-spacing: 0.28px;
+    @extend %font;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -79,10 +80,11 @@
 &:hover,
 &:focus {
     color: $accent-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
+    // font-size: 14px;
+    // font-weight: 500;
+    // line-height: 1.14;
+    // letter-spacing: 0.28px;
+    @extend %font;
 }
 
 &__link {
@@ -90,10 +92,11 @@
     align-items: center;
     gap: 10px;
     color: $added-text;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
+    // font-size: 14px;
+    // font-weight: 500;
+    // line-height: 1.14;
+    // letter-spacing: 0.28px;
+    @extend %font;
     text-decoration: none;
 
 &:hover {

@@ -90,9 +90,10 @@
 }
 
 &__check{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flax($wrap:nowrap);
 }
 
 &__checkbox{

@@ -56,9 +56,10 @@
 }
 
 &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flax();
     border-radius: 50%;
     padding: 12px;
     width: 44px;
