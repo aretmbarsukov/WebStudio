@@ -185,6 +185,10 @@
     top: 8px;
     right: 8px;
 
+    @media screen and (max-width: 480px) {
+        right: 38px;
+    }
+
 &:hover, 
 &:focus{
     .modal__exit{

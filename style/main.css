@@ -906,6 +906,11 @@ a.regular__link:focus .regular__svg {
   top: 8px;
   right: 8px;
 }
+@media screen and (max-width: 480px) {
+  .modal__close {
+    right: 38px;
+  }
+}
 .modal__close:hover .modal__exit, .modal__close:focus .modal__exit {
   fill: #2196F3;
 }
