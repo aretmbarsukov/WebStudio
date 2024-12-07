@@ -906,7 +906,7 @@ a.regular__link:focus .regular__svg {
   top: 8px;
   right: 8px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
   .modal__close {
     right: 38px;
   }
@@ -929,8 +929,14 @@ a.regular__link:focus .regular__svg {
 }
 
 .offers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .offers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .offers__buttons {
   display: flex;
@@ -984,19 +990,36 @@ a.regular__link:focus .regular__svg {
   letter-spacing: 0.48px;
 }
 .offers__item {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: 100%;
   border: 1px solid #EEE;
+}
+@media screen and (min-width: 768px) {
+  .offers__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offers__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .offers__img {
   width: 100%;
   height: auto;
   display: block;
 }
+@media screen and (min-width: 768px) {
+  .offers__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offers__img {
+    width: 370px;
+  }
+}
 .offers__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-}
-.offers__img {
-  width: 100%;
 }
 .offers__div {
   padding: 20px 24px;
