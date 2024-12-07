@@ -748,7 +748,8 @@ a.regular__link:focus .regular__svg {
   transform: translate(-50%, -50%);
   padding: 40px;
 }
-.modal-title {
+.modal__title {
+  width: 370px;
   color: #212121;
   text-align: center;
   font-family: Roboto;
@@ -758,6 +759,11 @@ a.regular__link:focus .regular__svg {
   line-height: normal;
   letter-spacing: 0.6px;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    width: 448px;
+  }
 }
 .modal__label {
   color: #757575;
@@ -778,7 +784,7 @@ a.regular__link:focus .regular__svg {
   border-color: #2196F3;
 }
 .modal__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -787,14 +793,24 @@ a.regular__link:focus .regular__svg {
   margin-bottom: 10px;
   padding-left: 42px;
 }
+@media screen and (min-width: 1200px) {
+  .modal__input {
+    width: 448px;
+  }
+}
 .modal__inputt {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
+@media screen and (min-width: 1200px) {
+  .modal__inputt {
+    width: 448px;
+  }
+}
 .modal__comment {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -809,9 +825,14 @@ a.regular__link:focus .regular__svg {
   display: block;
   margin-bottom: 25px;
 }
+@media screen and (min-width: 1200px) {
+  .modal__comment {
+    width: 448px;
+  }
+}
 .modal__check {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -823,21 +844,35 @@ a.regular__link:focus .regular__svg {
 .modal__span {
   color: #757575;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
+  line-height: 1.16;
+  letter-spacing: 0.36px;
   margin-left: 8px;
   margin-right: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__span {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
 }
 .modal__link {
   color: #2196F3;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.16;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.36px;
   text-decoration-line: underline;
+}
+@media screen and (min-width: 1200px) {
+  .modal__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
 }
 .modal__btn {
   border-radius: 4px;
@@ -852,9 +887,15 @@ a.regular__link:focus .regular__svg {
   letter-spacing: 0.96px;
   border: none;
   padding: 10px 52px;
-  margin-left: 124px;
-  margin-right: 124px;
+  margin-left: 85px;
+  margin-right: 85px;
   margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__btn {
+    margin-left: 124px;
+    margin-right: 124px;
+  }
 }
 .modal__close {
   width: 30px;
