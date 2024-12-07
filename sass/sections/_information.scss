@@ -1,20 +1,32 @@
 .information{
-    padding-top: 94px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
 
 &__list{
     flex-shrink: 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 &__item{
-    width: 270px;
+    width: 100%;
     flex-shrink: 0;
 
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+
 &::before {
+    width: 100%;
     content: "";
     margin-bottom: 30px;
-    width: 270px;
     height: 120px;
     border-radius: 4px;
     background: $team-background;
@@ -22,6 +34,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 &:nth-child(1)::before{
@@ -43,19 +63,37 @@
 
 &__title {
     color: $title-color;
+    text-align: center;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+        text-align: start;
+    }
 }
 
 &__text {
+    width: 100%;
     color: $added-text;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
     margin-top: 10px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 }

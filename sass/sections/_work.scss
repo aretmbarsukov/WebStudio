@@ -1,6 +1,11 @@
 .work {
+    display: none;
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 
 &__title {
     color: $title-color;

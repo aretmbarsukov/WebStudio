@@ -1,7 +1,12 @@
 .team{
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
 &__headlines {
     color: $title-color;
@@ -21,6 +26,8 @@
 
 &__list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -85,7 +92,15 @@
 }
 
 &__img {
-    width: 270px;
-    height: 260px;
+    width: 450px;
+    // height: 260px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 }

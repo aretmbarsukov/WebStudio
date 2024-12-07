@@ -9,20 +9,31 @@
 
     @media screen and (min-width: 1200px) {
         padding-bottom: 200px;
-        padding-left: 200px;
+        padding-top: 200px;
     }
 
 &__title {
+    width: 100%;
     color: $main-background;
     text-align: center;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
+    line-height: 1.16;
+    letter-spacing: 1.56px;
     text-transform: uppercase;
-    width: 696px;
-    margin-left: 236px;
-    margin-right: 236px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 390px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 2.64px;
+        width: 696px;
+    }
 }
 
 &__span {
@@ -39,7 +50,11 @@
     background: rgba(33, 150, 243, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-top: 30px;
-    padding: 10px 32px;
+    padding: 10px 24px;
     border: none;
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+    }
 }
 }
