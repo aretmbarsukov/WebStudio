@@ -23,13 +23,23 @@
 &__list{
     @include flax($justify:space-between, $align:stretch);
     gap: 30px 0;
+
+    @media screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;  
+        gap: 10px;
+    }
 }
 
 &__link{
-    @include flax($wrap:nowrap);
-    padding: 16px 52px;
+    @include flax($wrap:wrap);
+    padding: 16px 0;
     border: 1px solid $icon-team;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+        padding: 16px 52px;
+    }
 
     @media screen and (min-width: 768px) {
         padding: 16px 60px;
