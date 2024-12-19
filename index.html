@@ -26,6 +26,11 @@
         <a href="./index.html" class="header__logo">
           <span class="header__span">Web</span>Studio
         </a>
+        <button class="header__btn" type="button" data-modal-header-open>
+          <svg class="header__menu">
+            <use href="./imeges/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__iten">
@@ -41,11 +46,9 @@
         </nav>
         <ul class="header__list">
           <li class="header__item">
-            <a href="meilto:info@devstudio.com" class="head__link element">
+            <a href="mailto:info@devstudio.com" class="head__link element">
               <svg class="head__icon">
-                <use
-                  href="./imeges/symbol-defs.svg#icon-envelope-hover">
-                </use>
+                <use href="./imeges/symbol-defs.svg#icon-envelope-hover"></use>
               </svg>info@devstudio.com
             </a>
           </li>
@@ -57,8 +60,30 @@
             </a>
           </li>
         </ul>
-      </div>
-    </header>
+        <div class="menu is-hidden" data-header-modal>
+          <button type="button" class="menu__btn" data-modal-header-close>
+            <svg class="menu__close">
+              <use href="./imeges/symbol-defs.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+            <li class="menu__item"><a href="./pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+          </ul>
+          <ul class="menu__list-contact">
+            <li class="menu__item-contact"><a href="tel:+380961111111" class="menu__link-contact">+38 096 111 11 11</a></li>
+            <li class="menu__item-contact"><a href="meilto:info@devstudio.com" class="menu__link-contact">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu__list-social">
+            <li class="menu__item-social"><a href="#" class="menu__link-social">Instagram</a></li>
+            <li class="menu__item-social"><a href="#" class="menu__link-social">Twitter</a></li>
+            <li class="menu__item-social"><a href="#" class="menu__link-social">Facebook</a></li>
+            <li class="menu__item-social"><a href="#" class="menu__link-social">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>  
+    </header>  
     <main>
       <section class="hero">
         <div class="container">
@@ -313,7 +338,7 @@
         <div class="div__footer">
           <div class="address__div">
             <a href="./index.html" class="footer__logo">
-            <span class="style1">Web</span>Studio</a>
+            <span class="header__span">Web</span>Studio</a>
             <address class="footer__address">
             <div>
               <a href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17" target="_blank" class="address__link element">м. Київ, пр-т Лесі Українки, 26</a>
@@ -412,5 +437,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

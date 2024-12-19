@@ -42,6 +42,20 @@
     letter-spacing: 0.78px;
 }
 
+&__btn{
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+&__menu{
+  width: 40px;
+  height: 40px;
+  fill: $logo-color;
+}
+
 &__list {
     list-style: none;
     display: none;
@@ -155,4 +169,106 @@
     width: 10px;
     height: 16px;
 }
+}
+
+.menu{
+  background-color: $main-background;
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  padding: 48px 0 48px 40px;
+
+  &__btn{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+
+  &__close{
+    width: 40px;
+    height: 40px;
+    fill: $title-color;
+  }
+
+  &__item:first-child{
+    margin-bottom: 36px;
+  }
+
+  &__item:nth-child(2){
+    margin-bottom: 32px;
+  }
+
+  &__link{
+  color: $title-color;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.175;
+  letter-spacing: 0.8px;
+  }
+
+  &__link:hover{
+    color: $accent-color;
+  }
+
+  &__list-contact{
+    margin-top: 300px;
+  }
+
+  &__item-contact:first-child{
+    margin-bottom: 32px;
+
+    .menu__link-contact{
+      color: $accent-color;
+      font-size: 34px;
+      line-height: 1.17;
+      letter-spacing: 0.68px;
+    }
+  }
+
+  &__link-contact{
+  color: $added-text;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+  }
+
+  &__list-social{
+    margin-top: 64px;
+    display: flex;
+  }
+
+  &__item-social{
+    &:not(:last-child){
+      margin-right: 10px;
+      display: flex;
+      &::after{
+        content: "";
+        width: 1px;
+        height: 22px;
+        background: rgba(33, 33, 33, 0.20);
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__link-social{
+    color: $accent-color;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.36px;
+  }
+}
+
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
 }
