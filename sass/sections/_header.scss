@@ -243,6 +243,7 @@
   &__list-social{
     margin-top: 64px;
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item-social{

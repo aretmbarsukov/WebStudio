@@ -258,6 +258,7 @@ img {
 .menu__list-social {
   margin-top: 64px;
   display: flex;
+  flex-wrap: wrap;
 }
 .menu__item-social:not(:last-child) {
   margin-right: 10px;

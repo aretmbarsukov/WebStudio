@@ -17,39 +17,64 @@
         <a href="./index.html" class="header__logo">
           <span class="header__span">Web</span>Studio
         </a>
+        <button class="header__btn" type="button" data-modal-header-open>
+          <svg class="header__menu">
+            <use href="../imeges/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__iten">
-              <a href="../index.html" class="head__pages element">Студія</a>
+              <a href="./index.html" class="head__pages element">Студія</a>
             </li>
             <li class="nav__iten">
-              <a href="../pages/portfolio.html" class="head__pages element">Портфоліо</a>
+              <a href="./pages/portfolio.html" class="head__pages element">Портфоліо</a>
             </li>
             <li class="nav__iten">
-              <a href="../pages/contact.html" class="head__pages element">Контакти</a>
+              <a href="./pages/contact.html" class="head__pages element">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="header__list">
           <li class="header__item">
-            <a href="meilto:info@devstudio.com" class="head__link element">
+            <a href="mailto:info@devstudio.com" class="head__link element">
               <svg class="head__icon">
-                <use
-                  href="../imeges/symbol-defs.svg#icon-envelope-hover">
-                </use>
+                <use href="./imeges/symbol-defs.svg#icon-envelope-hover"></use>
               </svg>info@devstudio.com
             </a>
           </li>
-          <li class="header__item">
+          <li class="header_item">
             <a href="tel:+380961111111" class="head__link element">
-              <svg class="head__icon head-icon__phone">
-                <use href="../imeges/symbol-defs.svg#icon-smartphone"></use>
+              <svg class="head__icon head__icon__phone">
+                <use href="./imeges/symbol-defs.svg#icon-smartphone"></use>
               </svg>+38 096 111 11 11
             </a>
           </li>
         </ul>
-      </div>
-    </header>
+        <div class="menu is-hidden" data-header-modal>
+          <button type="button" class="menu__btn" data-modal-header-close>
+            <svg class="menu__close">
+              <use href="../imeges/symbol-defs.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+            <li class="menu__item"><a href="./pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+          </ul>
+          <ul class="menu__list-contact">
+            <li class="menu__item-contact"><a href="tel:+380961111111" class="menu__link-contact">+38 096 111 11 11</a></li>
+            <li class="menu__item-contact"><a href="meilto:info@devstudio.com" class="menu__link-contact">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu__list-social">
+            <li class="menu__item-social"><a href="#" class="menu__link-social">Instagram</a></li>
+            <li class="menu__item-social"><a href="#" class="menu__link-social">Twitter</a></li>
+            <li class="menu__item-social"><a href="#" class="menu__link-social">Facebook</a></li>
+            <li class="menu__item-social"><a href="#" class="menu__link-social">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>  
+    </header> 
     <main>
       <!-- пропозиції -->
       <section class="offers">
@@ -228,5 +253,6 @@
         </address>
       </div>
     </footer>
+    <script src="../js/menu.js"></script>
   </body>
 </html>
