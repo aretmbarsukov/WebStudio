@@ -35,14 +35,14 @@
     padding-bottom: 60px;
 
 &__box{
-    display: flex;
-    flex-wrap: wrap;
+    @include flax($justify:center, $align:baseline);
 
-    @media screen and (max-width: 1199px) {
-        display: flex; 
+    @media screen and (max-width: 768px) {
+        gap: 60px;
+        display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; 
+        flex-direction: column;
         text-align: center;
     }
 }
@@ -133,22 +133,10 @@
     }
 
     @media screen and (min-width: 1200px) {
+        margin-left: auto;
         margin-top: 0;
     }
 }
-}
-
-.div__footer{
-    @include flax($justify:center, $align:baseline);
-    
-    @media screen and (max-width: 768px) {
-        gap: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 .box__footer{
@@ -167,17 +155,18 @@
 
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
+        margin-right: auto;
     }
 }
 
 .mailing{
 &__div{
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
         width: 100%;
     }
 
     @media screen and (min-width: 1200px) {
-        margin-left: 93px; 
+        margin-left: auto; 
     }
 }
 
@@ -193,6 +182,7 @@
 &__boxx{
     margin-top: 20px;
     @include flax($flex: block);
+    // width: 100vw;
 
     @media screen and (min-width: 1200px) {
         display: flex;

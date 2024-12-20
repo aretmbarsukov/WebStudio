@@ -9,8 +9,13 @@
 
 &__buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
+
+    @media screen and (max-width: 767px) {
+        justify-content: start;
+    }
 }
 
 &__list {
