@@ -1213,6 +1213,8 @@ a.regular__link:focus .regular__svg {
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
+  z-index: -1;
 }
 @media screen and (min-width: 768px) {
   .offers__img {
